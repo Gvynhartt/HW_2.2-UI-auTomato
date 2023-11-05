@@ -27,51 +27,7 @@ class ChangeTextTest {
     private val emptyLineToSet = ""
     private val nonEmptyLineExternal = "Deep, dark fantasies..."
 
-//    @Test
-//    fun testInternetSettings() {
-//    // Press home
-//    device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-//    device.pressHome()
-//
-//    // Wait for launcher
-//    val launcherPackage = device.launcherPackageName
-//    device.wait(Until.hasObject(By.pkg(launcherPackage)), TIMEOUT)
-//    // waitForPackage(SETTINGS_PACKAGE)
-//
-//    val context = ApplicationProvider.getApplicationContext<Context>()
-//    val intent = context.packageManager.getLaunchIntentForPackage(SETTINGS_PACKAGE)
-//    context.startActivity(intent)
-//    device.wait(Until.hasObject(By.pkg(SETTINGS_PACKAGE)), TIMEOUT)
-//
-//    device.findObject(
-//    UiSelector().resourceId("android:id/title").instance(0)
-//    ).click()
-//    }
-//    @Test
-//    fun testChangeText() {
-////     Press home
-//    device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-//    device.pressHome()
-//
-//    // Wait for launcher
-//    val launcherPackage = device.launcherPackageName
-//    device.wait(Until.hasObject(By.pkg(launcherPackage)), TIMEOUT)
-//    // waitForPackage(SETTINGS_PACKAGE)
-//
-//    val context = ApplicationProvider.getApplicationContext<Context>()
-//    // val packageName = context.packageName
-//    val intent = context.packageManager.getLaunchIntentForPackage(MODEL_PACKAGE)
-//    context.startActivity(intent)
-//    device.wait(Until.hasObject(By.pkg(MODEL_PACKAGE)), TIMEOUT)
-//
-//
-//    device.findObject(By.res(MODEL_PACKAGE, "userInput")).text = textToSet
-//    device.findObject(By.res(MODEL_PACKAGE, "buttonChange")).click()
-//
-//    val result = device.findObject(By.res(MODEL_PACKAGE, "textToBeChanged")).text
-//    assertEquals(textToSet, result)
-//    }
-//
+// для проверки Workflow выкидываем закомментированную простыню
     private fun waitForPackage(packageName: String) {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val intent = context.packageManager.getLaunchIntentForPackage(packageName)
